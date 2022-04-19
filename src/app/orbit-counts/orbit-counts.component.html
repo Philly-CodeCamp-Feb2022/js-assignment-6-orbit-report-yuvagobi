@@ -1,6 +1,9 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div>Total: <span class="counts-total">{{countByType()}}</span></div>
+	<!-- <div *ngFor="let category of satellites; index as i; trackBy: trackByFn">{{category.type}}: <span>{{countByType(category.type)}}</span></div> -->
+
 </div>
 
+<!-- <div *ngFor="let category of categories">{{category}}: <span>{{typeCount(category)}}</span></div> -->
 <!-- TODO 4: add logic to count number of satellites displayed -->
